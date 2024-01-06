@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>LOVE</title>
+          <link rel="stylesheet" href="index.css" />
+            <style>
+                body {
+                      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+                            background-color: #f5f5f5;
+                                  margin: 0;
+                                        padding: 0;
+                                              display: flex;
+                                                    justify-content: center;
+                                                          align-items: center;
+                                                                height: 100vh;
+                                                                    }
+
+                                                                        section {
+                                                                              background-color: #fff;
+                                                                                    border-radius: 10px;
+                                                                                          padding: 20px;
+                                                                                                margin: 10px;
+                                                                                                      text-align: center;
+                                                                                                            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                                                                                                                  transition: transform 0.3s ease-in-out;
+                                                                                                                      }
+
+                                                                                                                          section:hover {
+                                                                                                                                transform: scale(1.05);
+                                                                                                                                    }
+
+                                                                                                                                        a {
+                                                                                                                                              color: #ff4081;
+                                                                                                                                                    text-decoration: none;
+                                                                                                                                                          font-weight: bold;
+                                                                                                                                                              }
+
+                                                                                                                                                                  h2 {
+                                                                                                                                                                        margin: 0;
+                                                                                                                                                                              font-size: 18px;
+                                                                                                                                                                                    color: #333;
+                                                                                                                                                                                        }
+                                                                                                                                                                                          </style>
+                                                                                                                                                                                          </head>
+
+                                                                                                                                                                                          <body>
+                                                                                                                                                                                            <section id="loveMessage" class="coll-6">
+                                                                                                                                                                                                <h2>
+                                                                                                                                                                                                      Thank you for always accepting me as I am and for your unwavering love 💖.
+                                                                                                                                                                                                            <br />I have something for you. Again, thank you, love.
+                                                                                                                                                                                                                  <a href="new.html">Click Here</a>
+                                                                                                                                                                                                                      </h2>
+                                                                                                                                                                                                                        </section>
+
+                                                                                                                                                                                                                          <section id="emojiSection" class="coll-5">
+                                                                                                                                                                                                                              <h2>😇</h2>
+                                                                                                                                                                                                                                </section>
+
+                                                                                                                                                                                                                                  <section id="emojiSection2" class="coll-4">
+                                                                                                                                                                                                                                      <h2>😊</h2>
+                                                                                                                                                                                                                                        </section>
+
+                                                                                                                                                                                                                                          <section id="messageSection" class="coll-3">
+                                                                                                                                                                                                                                              <h2>I want to say something to you</h2>
+                                                                                                                                                                                                                                                </section>
+
+                                                                                                                                                                                                                                                  <section id="greetingSection" class="coll-2">
+                                                                                                                                                                                                                                                      <h2>Wassup?</h2>
+                                                                                                                                                                                                                                                        </section>
+
+                                                                                                                                                                                                                                                          <section id="hiSection" class="coll">
+                                                                                                                                                                                                                                                              <h2>Hi, 😃</h2>
+                                                                                                                                                                                                                                                                </section>
+
+                                                                                                                                                                                                                                                                  <script src="https://cdnjs.cloudflare.com/ajax/libs/draggabilly/3.0.0/draggabilly.pkgd.min.js"
+                                                                                                                                                                                                                                                                      integrity="sha512-hbEWVzVt2yK7kQmJ1NZirxxO0NPtE4W09fT4f9Emem/n0rMPFHlLbuLcUcLNrtUGWGoQ8qGvKDVJnRRuCzjeZA=="
+                                                                                                                                                                                                                                                                          crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+                                                                                                                                                                                                                                                                            <script>
+                                                                                                                                                                                                                                                                                // Use more meaningful variable names
+                                                                                                                                                                                                                                                                                    let loveSection = document.getElementById("loveMessage");
+                                                                                                                                                                                                                                                                                        let emojiSection = document.getElementById("emojiSection");
+                                                                                                                                                                                                                                                                                            let emojiSection2 = document.getElementById("emojiSection2");
+                                                                                                                                                                                                                                                                                                let messageSection = document.getElementById("messageSection");
+                                                                                                                                                                                                                                                                                                    let greetingSection = document.getElementById("greetingSection");
+                                                                                                                                                                                                                                                                                                        let hiSection = document.getElementById("hiSection");
+
+                                                                                                                                                                                                                                                                                                            // Use meaningful variable names for Draggabilly instances
+                                                                                                                                                                                                                                                                                                                let loveDraggabilly = new Draggabilly(loveSection);
+                                                                                                                                                                                                                                                                                                                    let emojiDraggabilly = new Draggabilly(emojiSection);
+                                                                                                                                                                                                                                                                                                                        let emoji2Draggabilly = new Draggabilly(emojiSection2);
+                                                                                                                                                                                                                                                                                                                            let messageDraggabilly = new Draggabilly(messageSection);
+                                                                                                                                                                                                                                                                                                                                let greetingDraggabilly = new Draggabilly(greetingSection);
+                                                                                                                                                                                                                                                                                                                                    let hiDraggabilly = new Draggabilly(hiSection);
+                                                                                                                                                                                                                                                                                                                                      </script>
+                                                                                                                                                                                                                                                                                                                                      </body>
+
+                                                                                                                                                                                                                                                                                                                                      </html>
+                                                                                                                                                                                                                                                                                                                                      
